@@ -1,41 +1,94 @@
 # AI-Based PCB Defect Detection
 
-An AI-based PCB defect detection system using YOLOv8.
+An AI-based PCB defect detection system developed using **YOLOv8** and deep learning to automatically identify defects in Printed Circuit Boards (PCBs).
 
-## Detected Defects
+## 📌 Project Overview
 
-- Open
-- Short
-- Mouse Bite
-- Spur
-- Copper
-- Hole
+Manual PCB inspection can be time-consuming and may miss small defects. This project uses a trained YOLOv8 object detection model to detect PCB defects from an input image.
 
-## Model
+## 🚀 Features
 
-YOLOv8 Nano trained on the DeepPCB dataset.
+* AI-based PCB inspection
+* YOLOv8 object detection
+* Automatic defect localization using bounding boxes
+* Fast image inference
+* Detection result visualization
 
-## Results
+## 🔍 Defect Classes
 
-The trained model achieved approximately 98.1% mAP50 on the validation dataset.
+The model is trained to detect PCB defect categories including:
 
-## Test Detection
+* Open
+* Short
+* Mouse Bite
+* Spur
+* Copper
+* Hole
 
-The model was tested on a PCB image and successfully detected:
-- 3 Shorts
-- 6 Holes
+## 🧠 Model
 
-## Project Structure
+**Model:** YOLOv8
+**Dataset:** DeepPCB
+**Framework:** Ultralytics
+**Language:** Python
 
-PCB_Defect_Detection/
-├── model/
-├── results/
-└── src/
+## 🧪 Test Result
 
-## Technologies
+The trained model was tested using a PCB image.
 
-- Python
-- YOLOv8
-- Ultralytics
-- OpenCV
-- Deep Learning
+The test image successfully detected:
+
+* **3 Shorts**
+* **6 Holes**
+
+### Detection Result
+
+![PCB Defect Detection Result](YOLOv8_PCB_Defect_Detection.jpg)
+
+## 🛠️ Technologies Used
+
+* Python
+* YOLOv8
+* Ultralytics
+* PyTorch
+* OpenCV
+* Deep Learning
+
+## 📂 Project Files
+
+```text
+AI-Based-PCB-Defect-Detection/
+├── README.md
+├── requirements.txt
+├── best.pt
+├── detect.py
+└── YOLOv8_PCB_Defect_Detection.jpg
+```
+
+## ▶️ How to Run
+
+Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the detection script:
+
+```bash
+python detect.py
+```
+
+## 🎯 Applications
+
+* Automated PCB inspection
+* Electronics manufacturing
+* Quality control
+* Defect identification
+* Smart manufacturing systems
+
+## 👨‍💻 Author
+
+**Gowtham S**
+
+B.E. Electronics and Communication Engineering
